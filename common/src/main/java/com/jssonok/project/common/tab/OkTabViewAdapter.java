@@ -63,7 +63,7 @@ public class OkTabViewAdapter {
     public Fragment getItem(int position) {
         try {
             // 创建对应的Fragment
-            mInfoList.get(position).fragment.newInstance();
+            return mInfoList.get(position).fragment.newInstance();
         } catch (Exception e) {
             e.printStackTrace();
         }
